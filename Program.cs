@@ -77,6 +77,20 @@ for (int shipNumber = 1; shipNumber <= 5; shipNumber++)
     }
 }
 
+// P2 handover
+Console.WriteLine("Player 2's turn! Are you ready to start guessing?");
+while (true)
+{
+    Console.Write("Y / N: ");
+    string ready = Console.ReadLine();
+
+    if (ready == "Y" || ready == "y")
+    {
+        bool plaerTwoReady = true;
+        break;
+    }
+}
+
 //Methods
 int InputInRange (int lower, int upper)
 {
@@ -115,6 +129,6 @@ List <(int, int)> GenerateCoordinates
 
 // Random ship placement
 
-// P2 handover + guess and evaluate hit or miss until all ships are sunk
+// Guess and evaluate hit or miss until all ships are sunk
 
 // Check for identical guesses
